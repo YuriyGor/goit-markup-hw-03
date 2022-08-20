@@ -207,15 +207,16 @@ body {
 
     list-style: none;
 }
-.map {
-    color: var(--white-color--);
 
-    line-height: 1.71;
-    text-decoration: none;
-}
 .link {
     color: var(--white-color-footer-link--);
     
+    line-height: 1.71;
+    text-decoration: none;
+}
+.map {
+    color: var(--white-color--);
+
     line-height: 1.71;
     text-decoration: none;
 }
