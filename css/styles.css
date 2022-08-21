@@ -50,6 +50,12 @@ body {
     letter-spacing: 0.03em;
 }
 
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*хедер*/
 .header {
     border-bottom: 1px solid var(--border-header-color--);
