@@ -105,24 +105,28 @@ body {
 }
 
 
-.web {
+.logo-header {
     color: var(--accent-color--);
     font-family: Raleway, sans-serif;
 
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
+    letter-spacing: 0.03em;
     text-decoration: none;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .studio-black {
     color: var(--black-color--);
 }
-.site-nav {
-    display: flex;
-    color: var(--secondary-text-color--);
-    
+.site-nav {    
+    color: var(--secondary-text-color--);    
     list-style: none;
+
+    display: flex;
+    margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -157,12 +161,15 @@ body {
     margin-right: 50px;
 }
 .header-contact .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color--);
 
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     text-decoration: none;
 }
 .header-contact .link:hover,
@@ -315,6 +322,20 @@ body {
 /*футер*/
 .footer {
     background-color: var(--hero-footer-background-color--);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-footer {
+    color: var(--accent-color--);
+
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
 }
 .studio-white {
     color: var(--white-color--);
