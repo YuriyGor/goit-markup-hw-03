@@ -258,16 +258,16 @@ body {
     margin-bottom: 10px;
 } 
 .feature-text {
+    color: var(--primary-text-color--);
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color--);
+    letter-spacing: 0.03em;    
 }
 
 /*напрямки*/
-.work-list {
-   
+.work-list {   
     display: flex;
     justify-content: space-between;
 }
@@ -298,12 +298,19 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19; 
-    text-align: center; 
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px; 
 }
 .team-list .position {
+    color: var(--primary-text-color--);
+
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.19; 
+    line-height: 1.19;
+    letter-spacing: 0.03em; 
     text-align: center; 
+    padding-bottom: 30px;
 }
 
 /*футер*/
@@ -340,8 +347,7 @@ body {
     color: var(--accent-color--);
 }
 
-/*Портфоліо*/
-/*проекти*/
+/*портфоліо*/
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -355,6 +361,10 @@ body {
     margin: -1px;
 }
 .button-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
     list-style: none;
 }
 .button {
@@ -362,15 +372,15 @@ body {
     background-color: var(--secondary-background-color--);
     border-color: transparent;
     cursor: pointer;
-
+    
     font-family: inherit;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-
+    display: inline-block;
+    padding: 6px 22px;
     border-radius: 4px;
 }
 .button:hover,
