@@ -63,7 +63,8 @@ button {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;    
+    padding: 0 15px;   
+    outline: 2px solid tomato; 
 }
 .list {
     list-style: none;
@@ -93,11 +94,17 @@ body {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .navigation {
     display: flex;
     align-items: center;
 }
+
+.logo {
+    margin-right: 93px;
+}
+
 
 .web {
     color: var(--accent-color--);
@@ -118,13 +125,22 @@ body {
     
     list-style: none;
 }
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--secondary-text-color--);  
 
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    text-decoration: none;   
 }
 .site-nav .current {
     color: var(--accent-color--);
@@ -133,11 +149,15 @@ body {
 .site-nav .link:focus {
     color: var(--accent-color--);
 }
-.contact {
+.header-contact {
     display: flex;
     list-style: none;
+    margin-left: auto;
 }
-.contact .link {
+.header-contact .item:not(:last-child) {
+    margin-right: 50px;
+}
+.header-contact .link {
     color: var(--primary-text-color--);
 
     font-weight: 500;
@@ -146,43 +166,49 @@ body {
 
     text-decoration: none;
 }
-.contact .link:hover,
-.contact .link:focus {
+.header-contact .link:hover,
+.header-contact .link:focus {
     color: var(--accent-color--);
 }
 
 /*герой*/
 .hero {
     background-color: var(--hero-footer-background-color--);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
+    font-family: Roboto;
+    font-style: normal;
     color: var(--white-color--);
-
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .hero-button {
     background-color: var(--accent-color--);
     color: var(--white-color--);
     border-color: transparent;
     cursor: pointer;
-
     font-family: inherit;
-
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-
+    padding: 10px 32px;
     border-radius: 4px;
+    border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -198,6 +224,8 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 .visually-hidden {
     position: absolute;
@@ -212,8 +240,13 @@ body {
     margin: -1px;
 }
 .feature-list {
-
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
     list-style: none;
+}
+.feature-item {
+    flex-basis: calc((100% - 90px) / 4);
 }
 .feature-title {
     color: var(--secondary-text-color--);
@@ -222,14 +255,21 @@ body {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 } 
 .feature-text {
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color--);
 }
 
 /*напрямки*/
 .work-list {
-    list-style: none;
+   
+    display: flex;
+    justify-content: space-between;
 }
 
 /*команда*/
@@ -237,15 +277,22 @@ body {
     background-color: var(--secondary-background-color--);
 }
 .team-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
     list-style: none;
 }
-.cards {
+.team-cards {
     background-color: var(--white-color--);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - 90px) / 4);
 }
-.team-list .name {
+.team-img {
+    padding-bottom: 30px;
+}
+.team-name {
     color: var(--secondary-text-color--);
 
     font-weight: 500;
